@@ -26,16 +26,22 @@ High-frequency trading potential: Many statistical arbitrage strategies are buil
 
 # Strategy pseudocode
 
-Calculate “hedge_ratio” by fitting OLS regression on the entire dataset
+Calculate “hedge_ratio” by fitting OLS regression on the entire dataset.
+
 Calculate the portfolio value (also known as the spread) at each point in time using the asset prices and the constant hedge_ratio.
+
 Calculate the Z score at each point in time, by computing the mean and standard deviation of the “lookback_period”, where lookback_period will define the number of previous observations we take into account. Example, if the lookback_period is 20, then we calculate the mean and standard deviation based on the last 20 minutes for each iteration.
+
 Open positions:
-If z<-2 buy 1 BTC and sell hedge_ratio worth of BCH
-	Close by opening an offsetting one when z>=0
-If z>2 sell 1 BTC and buy hedge_ratio worth of BCH
-	Close by opening an offsetting one when z<=0
-Record all opened positions by storing the trade timestamp, trade type, traded price for BTC, traded price for BCH in a dataset called “trades”
+If z<-2 buy 1 BTC and sell hedge_ratio worth of BCH;
+	Close by opening an offsetting one when z>=0;
+If z>2 sell 1 BTC and buy hedge_ratio worth of BCH;
+	Close by opening an offsetting one when z<=0;
+
+Record all opened positions by storing the trade timestamp, trade type, traded price for BTC, traded price for BCH in a dataset called “trades”.
+
 Calculate the pnl of each trade based on the last price from the dataset and the stored prices from “trades” data frame.
+
 Sum up the pnl
 
 # Strategy optimisation
