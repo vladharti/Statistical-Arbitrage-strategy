@@ -35,6 +35,7 @@ Calculate the Z score at each point in time, by computing the mean and standard 
 Open positions:
 If z<-2 buy 1 BTC and sell hedge_ratio worth of BCH;
 	Close by opening an offsetting one when z>=0;
+	
 If z>2 sell 1 BTC and buy hedge_ratio worth of BCH;
 	Close by opening an offsetting one when z<=0;
 
