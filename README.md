@@ -33,6 +33,7 @@ Calculate the portfolio value (also known as the spread) at each point in time u
 Calculate the Z score at each point in time, by computing the mean and standard deviation of the “lookback_period”, where lookback_period will define the number of previous observations we take into account. Example, if the lookback_period is 20, then we calculate the mean and standard deviation based on the last 20 minutes for each iteration.
 
 Open positions:
+
 If z<-2 buy 1 BTC and sell hedge_ratio worth of BCH;
 	Close by opening an offsetting one when z>=0;
 	
