@@ -10,6 +10,7 @@ Cointegration is a statistical concept that deals with the long-term relationshi
 In simple terms, two or more time series are said to be cointegrated if:
 1.	They are individually non-stationary, meaning they have a time-dependent structure, and their means and variances change over time. In practice, this often means that each time series has a unit root, which is a common cause of non-stationarity.
 2.	There exists a linear combination of these time series that is stationary, meaning it has a constant mean and variance over time with no long-term persistent trend or seasonality.
+
 It allows us to identify the long-term equilibrium relationships among non-stationary time series. 
 In this project the prices of cryptocurrencies will be tested for cointegration. The data will be fitted into a linear regression model and the residuals will be stored separately. After this, an Augmented Dickey–Fuller test will be performed on the residuals to identify if there is a unit root present. In other words, this will test if the residuals are stationary. If this is the case, it can be assumed that the time series are cointegrated, thus exhibit a long-term equilibrium relationship.
 Once there is proof of cointegration between 2 asset prices, these can be used as an underlying pair for statistical arbitrage trading strategies.
