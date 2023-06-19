@@ -2,7 +2,7 @@
 
 # Data
 https://www.cryptodatadownload.com/data/binance/
-For this project, the daily and minute prices of crypto coins were used. After testing the cointegration property of the pairs, Bitcoin and Bitcoin Cash were found to exhibit cointegrating properties. Thus the Statistical arbitrage (Pair trading) strategy will be tested on this pair.
+For this project, the daily and minute prices of crypto coins to USDT were used. After testing the cointegration property of the pairs, Bitcoin and Bitcoin Cash were found to exhibit cointegrating properties. Thus the Statistical arbitrage (Pair trading) strategy will be tested on this pair.
 
 # Finding the pairs
 In order to run statistical arbitrage strategies on two assets, these need to possess specific statistical features, defined by cointegration. 
