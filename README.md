@@ -4,6 +4,20 @@
 https://www.cryptodatadownload.com/data/binance/
 For this project, the daily and minute prices of crypto coins to USDT were used. After testing the cointegration property of the pairs, Bitcoin and Bitcoin Cash were found to exhibit cointegrating properties. Thus the Statistical arbitrage (Pair trading) strategy will be tested on this pair.
 
+# Files overview
+Imports.py - contains all the packages that need to be imported
+
+Testing for cointegration BTC-BCH.py - Contains the testing for cointegration of BTC/USDT and BCH/USDT daily prices data.
+
+minute data import.py - Contains the import and the merge of the minute prices data as well as the division of the data in 2 subsets, one for optimisation (merged_data_1) and one for performance testing (merged_data_2).
+
+Strategy execution function.py - This file contains the function that executes the strategy logic and outputs the pnl and a table containing all transactions.
+
+optimisation function.py - This file contains the optimisation function that would find the optimal lookback period as well as the maximum pnl that can be achieved on first subset (merged_data_1).
+
+strategy testing on new data.py - This file contains the testing of the strategy on the new dataset (merged_data_2).
+
+
 # Finding the pairs
 In order to run statistical arbitrage strategies on two assets, these need to possess specific statistical features, defined by cointegration. 
 Cointegration is a statistical concept that deals with the long-term relationship between two or more non-stationary time series. It is used extensively in econometrics and finance to identify and test for the presence of such relationships among series that exhibit non-stationary behaviour, such as stock prices, currency exchange rates or cryptocurrencies. 
